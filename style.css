@@ -528,7 +528,8 @@ section {
 }
 
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,
+.contact-form select {
     width: 100%;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -536,10 +537,12 @@ section {
     border-radius: 8px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
+    font-family: inherit;
 }
 
 .contact-form input:focus,
-.contact-form textarea:focus {
+.contact-form textarea:focus,
+.contact-form select:focus {
     outline: none;
     border-color: #3498db;
 }

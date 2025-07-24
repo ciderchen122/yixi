@@ -208,15 +208,29 @@
                     </div>
                     <div class="contact-item">
                         <strong>微信：</strong>ciderchen122
+                        <div class="wechat-qr">
+                            <img src="#" alt="微信二维码" style="width: 100px; height: 100px; margin-top: 10px; border-radius: 8px; display: none;">
+                            <p style="font-size: 0.9em; color: #666; margin-top: 5px;">扫码添加微信，快速响应</p>
+                        </div>
                     </div>
                 </div>
                 <div class="contact-form">
                     <h3>在线咨询</h3>
-                    <form>
-                        <input type="text" placeholder="您的姓名" required>
-                        <input type="email" placeholder="邮箱地址" required>
-                        <input type="tel" placeholder="联系电话" required>
-                        <textarea placeholder="项目需求描述" rows="5" required></textarea>
+                    <form action="https://formspree.io/f/xqalpvey" method="POST">
+                        <input type="hidden" name="_subject" value="来自易希科技官网的咨询">
+                        <input type="hidden" name="_next" value="https://yixitech.cc/#contact">
+                        <input type="text" name="name" placeholder="您的姓名" required>
+                        <input type="email" name="email" placeholder="邮箱地址" required>
+                        <input type="tel" name="phone" placeholder="联系电话" required>
+                        <select name="service" required>
+                            <option value="">请选择服务类型</option>
+                            <option value="软件推广视频">软件推广视频</option>
+                            <option value="跨境电商视频">跨境电商视频</option>
+                            <option value="数字人AI混剪">数字人AI混剪</option>
+                            <option value="企业宣传片">企业宣传片</option>
+                            <option value="其他视频服务">其他视频服务</option>
+                        </select>
+                        <textarea name="message" placeholder="项目需求描述（预算、时间要求、具体需求等）" rows="5" required></textarea>
                         <button type="submit" class="btn btn-primary">提交咨询</button>
                     </form>
                 </div>
